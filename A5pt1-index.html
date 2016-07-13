@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Index - Assignment 5, Part 1</title>
+        
+        <!--[if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+    
+    
+<script>
+
+
+// task 1  - inline HTML Attribute method 
+/*   
+function writeMessage() {    
+    alert("I have been clicked");
+}
+*/  
+    
+    
+// task 2 - See Task 2 - 4 in code below 
+    
+/*      
+// task 5 Event Listner  -     
+    document.addEventListener("DOMContentLoaded", init, false);
+    function init() {
+        buttonFive.addEventListener("click", writeMessage, false);
+    }
+    function writeMessage() {
+                    alert("You really like clicking buttons don't you?");
+    }
+ 
+*/  
+    
+ // See Javascript Code for Task 6 - 10  near the corresponding buttons.
+    
+    
+
+</script>
+    
+</head>
+
+    
+<body>
+    <!--  task 1       -->
+<button onclick="writeMessage()"> Old School Method</button> <br /> <br /> 
+
+    <!-- task 2    -->
+<button id="buttonTwo"> Task 2 button </button> <br /> <br />
+
+    <!-- task 3    -->    
+<button id="buttonThree"> Task 3 button </button> <br /> <br />  
+   
+    <!-- task 4    -->    
+<button id="buttonFour"> Task 4 button </button> <br /> <br />      
+
+
+    <!-- task 5    -->    
+<input id="buttonFive" type="button" value = "Task 5 button"> <br /> <br />        
+    
+    
+    <!-- task 6        -->  
+<div>   Task 6: <br />
+<a id="redirect" href="http://www.google.com"> Visit Google </a> <br /> <br />   <br />      
+<!--   
+    <script>// Task 6 code       
+	redirect.addEventListener("click", writeMessage, false); 
+        function writeMessage() {
+		  event.preventDefault(); 
+            alert("You clicked on a link.");
+        }      
+    </script>
+     --> 
+</div>    
+    
+    
+    
+    <!-- task 7    -->    
+<input type="text" size="50" id="userInput">  <br />       
+<input id="buttonSeven" type="button" value = "Task 7 button"> <br /> <br />    <br />      
+<!--            
+<script> // Task 7 code
+    var textInput = document.getElementById("userInput");
+        buttonSeven.addEventListener("click", promptMessage, false);
+            function promptMessage() {
+                alert(textInput.value);
+                buttonSeven.disabled = true; 
+            }
+    
+</script>
+-->   
+    
+  
+    <!-- task 8    -->    
+    <div>Task 8 <br />
+    <button id ="popUp">NEW PAGE  </button> <br />  <br /> <br />     
+    </div>    
+<!--         
+<script> // Task 8 code  
+	popUp.addEventListener("click", popUpFunction, false); 
+        function popUpFunction() {
+        window.open("A5pt1-newpage.html", "", "width=300 px , height=300 px");
+        }    
+</script>
+-->         
+
+    
+    <!-- task 9   -->     
+    <div>
+    <p>Task 9: <br />
+        Please open the console to see text running the BOM .setInterval() method</p>
+        <button id="startButton">Start Button</button>
+        <button id="stopButton">Stop Button</button>        
+    </div> <br /><br /><br />    
+    
+<!--    
+    <script> 
+        var id  = setInterval(counter, 2000); 
+        
+    	startButton.addEventListener("click", counter, false);  
+        function counter() {
+            window.console.log("Javascript is fun!");}   
+
+        stopButton.addEventListener("click", stopCounter, false); 
+        function stopCounter() {    
+            clearInterval(id);        
+       
+    </script>
+ -->   
+    
+    
+<!-- 
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+        
+    <script>
+    var myVar;   
+    function showText() {
+       myVar = setInterval(alertFunc, 2000);
+    }    
+    function stopText() {
+       clearInterval(myVar);
+    }   
+    function alertFunc() {
+        console.log("Learning JavaScript is fun!");
+    }
+    var start = document.getElementById("btnStart");
+    var stop = document.getElementById("btnStop");
+    start.addEventListener("click", showText, false);
+    stop.addEventListener("click", stopText, false);
+    </script>
+
+-->     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <!-- task 10   -->    
+<div> Task 10: Pick the game you like best <br />
+    <select id="dropListSelection">
+      <option value="Starcraft">StarCraft</option>
+      <option value="Warcraft">Warcraft</option>
+      <option value="Modern Warfare">Modern Warfare</option>
+      <option value="Uncharted">Uncharted</option>
+      <option value="Overwatch">Overwatch</option>        
+    </select>
+    <button id="select">Select</button>
+</div>
+
+<!--   
+<script> // Task 10 code  
+    select.addEventListener("click", choice, false);
+    function choice() {
+        alert("You selected " + dropListSelection.value + "!");
+    }
+</script>
+     -->       
+    
+
+    
+
+    
+    
+    
+<!-- Scripts for Task 2 through 4  -->    
+    
+<script>
+/*   
+// task 2 Will only work after the button has been placed on the DOM        
+    var taskTwo = document.getElementById("buttonTwo");
+        taskTwo.onclick = function(){
+            alert("I have been clicked - ALSO!");
+        }
+*/ 
+
+
+/*
+// task 3 Event Listner   - User Defined function   
+    buttonThree.addEventListener("click", writeMessage, false);
+        function writeMessage(){
+            alert("I have been clicked - 3rd time!");
+        }
+*/
+
+    
+/*  
+// task 4 Event Listner  - using a Callback Function      
+    buttonFour.addEventListener("click", function() {
+            alert("I have been clicked a 4th time!");
+        }, false);
+*/
+    
+// task 5 View code in Head     
+
+       
+    
+
+
+        
+    
+</script>       
+    
+<!-- End Assignment 5 part 1. Please proceed to Assignment 5 part 2 Calculator --> 
+</body>
+    
+    
+    
+    
+    
+    
+</html>
